@@ -1,0 +1,60 @@
+{
+    "guardia": {
+        "prioridad": "Media",
+        "mensaje": "Por favor acérquese al centro médico más cercano.\n\nAvellaneda: Av. Bartolomé Mitre 3420 \n\nCABA: Lavalle 1546 \n\nLanús: Av. Hipólito Yrigoyen 4278 \n\nQuilmes: Sarmiento 766 \n",
+        "resultado": "Por favor acérquese al centro médico más cercano."
+    },
+    "urgencias": {
+        "prioridad": "Alta",
+        "mensaje": "La ambulancia ya está en camino, por favor aguarde.",
+        "resultado": "La ambulancia ya está en camino, por favor aguarde."
+    },
+    "secretaria": {
+        "mensaje": "Veo que esta queriendo contactarse con Secretaria. \nPor favor digame en que puedo ayudar o si quiere contactarse directamente con un operador.",
+        "opciones_principales": [
+            {"id": 1, "texto": "Consulta", "prioridad": "Baja"},
+            {"id": 2, "texto": "Sacar turno", "prioridad": "Media"},
+            {"id": 3, "texto": "Reclamo", "prioridad": "Alta"},
+            {"id": 4, "texto": "Operador", "prioridad": "Baja"}
+        ],
+        "pasos": {
+            "1": {
+                "mensaje": "Preguntas frecuentes:",
+                "opciones": [
+                    {"id": 1, "texto": "¿Atienden por Obra Social?"},
+                    {"id": 2, "texto": "¿Donde se Ubican?"},
+                    {"id": 3, "texto": "¿En que Horario atienden?"},
+                    {"id": 4, "texto": "Otro."}
+                ]
+            },
+            "2": {
+                "mensaje": "En qué sector:",
+                "opciones": [
+                    {"id": 1, "texto": "Radiología"},
+                    {"id": 2, "texto": "Pediatría"}
+                ]
+            },
+            "3": {
+                "mensaje": "Lamentamos que haya sufrido inconvenientes bajo nuestros servicios.\nIndique el motivo:",
+                "opciones": [
+                    {"id": 1, "texto": "Mala atención"},
+                    {"id": 2, "texto": "Mala práxis"},
+                    {"id": 3, "texto": "Otro"}
+                ]
+            },
+            "4": {
+                "mensaje": "Ya lo estamos contactando, por favor espere."
+            }
+        },
+        "respuestas_finales": {
+            "faq": {
+                "1": "Actualmente trabajamos con: PAMI, Swiss Medical, Apres, IOMA y OSDE.",
+                "2": "Contamos con múltiples sedes en: Avellaneda, CABA, Lanús, Quilmes.",
+                "3": "Atendemos de 8hs a 18hs. La guardia está disponible las 24 horas.",
+                "4": "Por favor contactese a través de este número: 11-4889-3239 \nO también via Email: email@inventado.com."
+            },
+            "areas": "No hay turnos disponibles en este momento. Por favor consulte más tarde.",
+            "reclamo": "Gracias por comunicarlo con nosotros. Estaremos trabajando para mejorarlo."
+        }
+    }
+}
